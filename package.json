@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/mdfortino/Project-2#readme",
   "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
     "express": "^4.16.4",
     "hbs": "^4.0.1",
     "method-override": "^3.0.0",

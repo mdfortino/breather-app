@@ -4,7 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <title>StackStyle</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link rel="stylesheet" 
+    {{!-- https://cdnjs.com/libraries/twitter-bootstrap --}}
+    href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css"> 
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
   </head>
@@ -16,6 +18,7 @@
           <ul class="right">
           {{#if currentUser}}
             <li><a href="/awareness/new">+be aware</a></li>
+            <li> </li>
             {{!-- <li><a href="/question/new">+be grateful</a></li> --}}
             <li><a href="/user/{{currentUser.id}}">Profile</a></li>
             <li><a href="/user/logout">Log Out</a></li>
