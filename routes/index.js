@@ -9,7 +9,7 @@ router.use((req, res, next) => {
 router.use('/', require('./app.js'));
 router.use('/user', require('./user'));
 router.use('/awareness', require('./awareness'));
-router.use('/gratitude', require('./gratitude'));
+// router.use('/gratitude', require('./gratitude'));
 
 
 router.all('*', (req, res) => {

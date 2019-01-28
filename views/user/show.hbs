@@ -1,0 +1,12 @@
+<section class="profile">
+  <h2>{{user.email}}</h2>
+  {{#if user.questions}}
+    <div class="questions">
+      {{#each user.questions}}
+         {{> 'question'}}
+      {{/each}}
+    </div>
+  {{else}}
+    <p>No posts yet</p>
+  {{/if}}
+</section>
