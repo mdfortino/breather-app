@@ -1,0 +1,34 @@
+<p class="card">
+  {{> 'question'}}
+</p>
+
+{{#if answers.length}}
+  {{#each answers}}
+    <div class="card">
+      <div class="card-content">
+        <span class="card-title">
+          {{ content }}
+        </span>
+      </div>
+      <div class="card-action">
+        <a href="/user/{{ author.id }}" class="">{{ author.email }}</a>
+        <span class="question__date">{{ createdAt }}</span>
+        <span class="question_answers">{{ answers.length }} Answers</span>
+      </div>
+    </div>
+  {{/each}}
+{{/if}}
+
+<div class="card">
+  <div class="card-content">
+    <h4 class="card-title">Add an answer:</h6>
+    <form method="POST" action="/question/{{id}}?_method=PUT" class="row">
+      <p class="input-field inline col s10">
+        <label for="content"></label>
+        <input type="text" name="content" id="">
+      </p>
+      <p class="input-field inline col s2">
+        <input class="btn" type="submit" value="Submit">
+      </p>
+    </form>
+  </div>
