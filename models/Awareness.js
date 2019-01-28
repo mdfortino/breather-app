@@ -30,7 +30,6 @@ comment: [Comment]
 });
 
 
-
 module.exports = { 
     Awareness: mongoose.model("Awareness", Awareness),
     Comment: mongoose.model("Comment", Comment)
