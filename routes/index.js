@@ -6,11 +6,9 @@ router.use((req, res, next) => {
   next();
 });
 
-router.use('/', require('./app.js'));
+router.use('/', require('./application.js'));
 router.use('/user', require('./user'));
-router.use('/awareness', require('./awareness'));
-// router.use('/gratitude', require('./gratitude'));
-
+router.use('/question', require('./question'));
 
 router.all('*', (req, res) => {
   res.status(400).send();

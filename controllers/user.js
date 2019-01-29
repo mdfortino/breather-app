@@ -1,12 +1,12 @@
 const User = require("../models/User");
-const { Awareness } = require("../models/Awareness");
-const passport = require("passport")
+const { Question } = require("../models/Question");
+const passport = require("passport");
 
 module.exports = {
   show: (req, res) => {
     User.findOne({ _id: req.params.id })
       .populate({
-        path: "awarenessPosts",
+        path: "questions",
         options: { limit: 5, sort: { createdAt: -1 } }
       })
       .then(user => {
@@ -41,3 +41,5 @@ module.exports = {
     res.redirect("/");
   }
 };
+
+

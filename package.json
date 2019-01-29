@@ -29,8 +29,6 @@
     "hbs": "^4.0.1",
     "lodash": "^4.17.11",
     "method-override": "^3.0.0",
-    // "mongo": "^0.1.0",
-    // "mongodb": "^3.1.13",
     "mongoose": "^5.4.7",
     "parser": "^0.1.4",
     "passport": "^0.4.0",

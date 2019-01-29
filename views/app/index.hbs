@@ -1,16 +1,16 @@
-{{#if awarenessPosts}}
-  <ul class="awarenessPosts">
-    {{#each awarenessPosts}}
+{{#if questions}}
+  <ul class="questions">
+    {{#each questions}}
       <div class="card">
         <div class="card-content">
-          <a class="card-title" href="/awareness/{{id}}">
+          <a class="card-title" href="/question/{{id}}">
             {{ content }}
           </a>
         </div>
         <div class="card-action">
           <a href="/user/{{ author.id }}" class="">{{ author.email }}</a>
-          <span class="awareness__date">{{ createdAt }}</span>
-          <span class="awareness_comments">{{ comments.length }} Comments</span>
+          <span class="question__date">{{ createdAt }}</span>
+          <span class="question_answers">{{ answers.length }} Answers</span>
         </div>
       </div>
     {{/each}}
