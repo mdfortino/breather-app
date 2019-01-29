@@ -21,12 +21,12 @@ createdAt: {
 type: Date,
 default: Date.now()
 },
-likes_count: Number,
+// likes_count: Number,
 author: {
     type: Schema.Types.ObjectId,
     ref: "User"
   },
-comment: [Comment]
+comments: [Comment]
 });
 
 

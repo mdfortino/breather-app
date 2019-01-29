@@ -1,5 +1,6 @@
 const User = require("../models/User");
 const { Awareness } = require("../models/Awareness");
+const passport = require("passport")
 
 module.exports = {
   show: (req, res) => {
@@ -12,15 +13,31 @@ module.exports = {
         res.render("user/show", { user });
       });
   },
-  new: (req, res) => {
-    res.render("user/new");
+  login: (req, res) => {
+    res.render("user/login", { message: req.flash("loginMessage") });
   },
-  create: (req, res) => {
-    User.create({
-      email: req.body.email,
-      password: req.body.password
-    }).then(user => {
-      res.redirect(`/user/${user._id}`);
+  createLogin: (req, res) => {
+    const login = passport.authenticate("local-login", {
+      successRedirect: "/",
+      failureRedirect: "/user/login",
+      failureFlash: true
     });
+    return login(req, res);
+  },
+  signUp: (req, res) => {
+    res.render("user/signup", { message: req.flash("signupMessage") });
+  },
+  createSignUp: (req, res) => {
+    const signup = passport.authenticate("local-signup", {
+      successRedirect: "/",
+      failureRedirect: "/signup",
+      failureFlash: true
+    });
+
+    return signup(req, res);
+  },
+  logout: (req, res) => {
+    req.logout();
+    res.redirect("/");
   }
 };
