@@ -28,7 +28,7 @@ module.exports = {
       }).then(awareness => {
         console.log('awareness ', awareness)
         User.findOne({ _id: req.body.author }).then(user => {
-          user.awarenesss.push(awareness)
+          user.awarenesssPosts.push(awareness)
           user.save(result => {
             console.log(result)
             res.redirect(`/awareness/${awareness._id}`)

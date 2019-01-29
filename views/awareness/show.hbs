@@ -12,8 +12,8 @@
       </div>
       <div class="card-action">
         <a href="/user/{{ author.id }}" class="">{{ author.email }}</a>
-        <span class="question__date">{{ createdAt }}</span>
-        <span class="question_comments">{{ comments.length }} Comments</span>
+        <span class="awareness__date">{{ createdAt }}</span>
+        <span class="awareness_comments">{{ comments.length }} Comments</span>
       </div>
     </div>
   {{/each}}
@@ -22,7 +22,7 @@
 <div class="card">
   <div class="card-content">
     <h4 class="card-title">Add an answer:</h6>
-    <form method="POST" action="/question/{{id}}?_method=PUT" class="row">
+    <form method="POST" action="/awareness/{{id}}?_method=PUT" class="row">
       <p class="input-field inline col s10">
         <label for="content"></label>
         <input type="text" name="content" id="">

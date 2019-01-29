@@ -1,22 +1,23 @@
 const User = require("../models/User");
-const { Question } = require("../models/Question");
+const { Awareness } = require("../models/Awareness");
 const bcrypt = require("bcrypt-nodejs");
+// const mongoose = require('mongoose');
 
 const createPassword = password =>
   bcrypt.hashSync(password, bcrypt.genSaltSync(8), null)
 
 User.find({}).remove(() => {
-  Question.find({}).remove(() => {
+  Awareness.find({}).remove(() => {
     let bugs = User.create({
         email: "bugsbunny@gmail.com",
         password: "bugsbunny"
     }).then(user => {
         Promise.all([
-          Question.create({
+          Awareness.create({
             content: "5 things I see are water bottle, table, plug, glass, lights. 4 things I can touch are the keyboard, fingers, pants, heart. 3 things I can hear are music, sirens, someone chewing gum. 2 things I can smell are lavender oil and air. 1 thing I can taste is peppermint.",
             author: user._id
           }).then(awareness => {
-            user.awarenessPosts.push(awaress)
+            user.awarenessPosts.push(awarenss)
           }),
           Awareness.create({
             content: "That's all, folks!",

@@ -6,7 +6,7 @@ module.exports = {
   show: (req, res) => {
     User.findOne({ _id: req.params.id })
       .populate({
-        path: "awareness",
+        path: "awarenessPosts",
         options: { limit: 5, sort: { createdAt: -1 } }
       })
       .then(user => {

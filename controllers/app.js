@@ -7,8 +7,8 @@ module.exports = {
         .sort({ createdAt: -1 })
         .limit(10)
         .populate("author")
-        .then(awareness => {
-          res.render("app/index", { awareness });
+        .then(awarenessPosts => {
+          res.render("app/index", { awarenessPosts });
         });
     }
   };
