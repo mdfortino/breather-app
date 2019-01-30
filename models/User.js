@@ -6,10 +6,10 @@ const User = new Schema({
   email: String,
   username: String, 
   password: String,
-  questions: [
+  intentions: [
     {
       type: Schema.Types.ObjectId,
-      ref: "Question"
+      ref: "Intention"
     }
   ],
   likes_count: Number

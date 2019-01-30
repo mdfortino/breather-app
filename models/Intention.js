@@ -13,7 +13,7 @@ const Answer = new Schema({
   }
 });
 
-const Question = new Schema({
+const Intention = new Schema({
   content: String, 
   createdAt: {
     type: Date,
@@ -27,6 +27,6 @@ const Question = new Schema({
 });
 
 module.exports = {
-  Question: mongoose.model("Question", Question),
+  Intention: mongoose.model("Intention", Intention),
   Answer: mongoose.model("Answer", Answer)
 };

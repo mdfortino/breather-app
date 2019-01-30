@@ -1,12 +1,12 @@
 const User = require("../models/User");
-const { Question } = require("../models/Question");
+const { Inention } = require("../models/Intention");
 const passport = require("passport");
 
 module.exports = {
   show: (req, res) => {
     User.findOne({ _id: req.params.id })
       .populate({
-        path: "questions",
+        path: "intentions",
         options: { limit: 5, sort: { createdAt: -1 } }
       })
       .then(user => {

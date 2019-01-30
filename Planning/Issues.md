@@ -1,1 +1,1 @@
-How to create event listeners for see, hear, touch, taste, feel buttons instead of displaying a bunch of questions 
+How to create event listeners for see, hear, touch, taste, feel buttons instead of displaying a bunch of posts

@@ -41,8 +41,8 @@ app.use(methodOverride("_method"));
 
 app.use(require("./routes/index.js"));
 
-app.listen(3333, () => console.log("server is running"));
-
+app.set('port', process.env.PORT || 3333)
+app.listen(app.get('port'), () => console.log(`server is running on PORT ${app.get('port')}`))
 
 // const express = require("express");
 // const hbs = require("hbs");

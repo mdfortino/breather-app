@@ -1,14 +1,14 @@
 // a controller is just an object of methods(called actions)
-//the following shows the list of questions, sorted by date...perhaps sort by number of liks or something else?
-const { Question } = require("../models/Question")
+//the following shows the list of intentions, sorted by date...perhaps sort by number of liks or something else?
+const { Intention } = require("../models/Intention")
 module.exports = {
     index: (req, res) => {
-      Question.find({})
+      Intention.find({})
       .sort({ createdAt: -1 })
       .limit(10)
       .populate("author")
-      .then(questions => {
-        res.render("app/index", { questions });
+      .then(intentions => {
+        res.render("app/index", { intentions });
       })
     }
   };

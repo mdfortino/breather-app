@@ -1,5 +1,5 @@
 <p class="card">
-  {{> 'question'}}
+  {{> 'intention'}}
 </p>
 
 {{#if answers.length}}
@@ -12,8 +12,8 @@
       </div>
       <div class="card-action">
         <a href="/user/{{ author.id }}" class="">{{ author.email }}</a>
-        <span class="question__date">{{ createdAt }}</span>
-        <span class="question_answers">{{ answers.length }} Answers</span>
+        <span class="intention__date">{{ createdAt }}</span>
+        <span class="intention_answers">{{ answers.length }} Answers</span>
       </div>
     </div>
   {{/each}}
@@ -22,7 +22,7 @@
 <div class="card">
   <div class="card-content">
     <h4 class="card-title">Add a note for your teammate:</h6>
-    <form method="POST" action="/question/{{id}}?_method=PUT" class="row">
+    <form method="POST" action="/intention/{{id}}?_method=PUT" class="row">
       <p class="input-field inline col s10">
         <label for="content"></label>
         <input type="text" name="content" id="">
