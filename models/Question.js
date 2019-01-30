@@ -14,7 +14,7 @@ const Answer = new Schema({
 });
 
 const Question = new Schema({
-  content: String,
+  content: String, 
   createdAt: {
     type: Date,
     default: Date.now()
