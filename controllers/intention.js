@@ -13,6 +13,13 @@ module.exports = {
           intention.answers = answers
           res.render("intention/show", intention)
         })
+        Like.populate(intention.likes, { path: "author"}, function(
+          err,
+          likes
+        ){
+          intention.likes = likes
+          res.render("intention/show", intention)
+        } )
       })
   },
     new: (req, res) => {
@@ -42,6 +49,10 @@ module.exports = {
       Intention.findOne({ _id: req.params.id }).then(intention => {
         intention.answers.push({
           content,
+          author
+        })
+        intention.likes.push({
+          likes_count,
           author
         });
         intention.save(err => {

@@ -20,7 +20,6 @@ User.methods.encrypt = function(password) {
 };
 
 User.methods.validPassword = function(password) {
-  // removed local from local.password
   return bcrypt.compareSync(password, this.password);
 };
 
