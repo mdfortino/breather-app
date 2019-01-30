@@ -13,6 +13,18 @@ const Answer = new Schema({
   }
 });
 
+const Like = new Schema({
+  likes_count: Number,
+  createdAt: {
+    type: Date,
+    default: Date.now()
+  },
+  author: {
+    type: Schema.Types.ObjectId,
+    ref: "User"
+  }
+
+})
 const Intention = new Schema({
   content: String, 
   createdAt: {
@@ -23,10 +35,12 @@ const Intention = new Schema({
     type: Schema.Types.ObjectId,
     ref: "User"
   },
-  answers: [Answer]
+  answers: [Answer],
+  likes: [Like]
 });
 
 module.exports = {
   Intention: mongoose.model("Intention", Intention),
-  Answer: mongoose.model("Answer", Answer)
+  Answer: mongoose.model("Answer", Answer),
+  Like: mongoose.model("Like", Like)
 };
