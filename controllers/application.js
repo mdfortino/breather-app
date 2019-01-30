@@ -1,5 +1,5 @@
 // a controller is just an object of methods(called actions)
-//the following shows the list of questions
+//the following shows the list of questions, sorted by date...perhaps sort by number of liks or something else?
 const { Question } = require("../models/Question")
 module.exports = {
     index: (req, res) => {

@@ -1,3 +1,9 @@
+together, let's breathe
+an app for teams to set individual and team intentions each day. 
+one login per user 
+
+
+
 Leo Babauta's Zen Habits: https://zenhabits.net/ (specifically breathe tab and simple layout)
 
 5 4 3 2 1 Technique https://www.bhg.com.au/mindfulness-tool-reduce-anxiety 
@@ -7,7 +13,9 @@ For: all people of all ages (preschool to adults)
 Where: In workplace, yoga studios, juvenile detention centers, sports field, outside, inside, schools (anywhere) 
 
 How it works: 
-With feet on the ground, breathe, center, then:
+With feet on the ground, breathe, center, 
+
+then:
 Name/Focus on 5 things you can see 
 Name/Focus on 4 things you can touch (Optional: eyes closed) 
 Name/Focus on 3 things you can hear (Optional: eyes closed) 
