@@ -1,3 +1,5 @@
+// a controller is just an object of methods(called actions)
+//the following shows the list of questions
 const { Question } = require("../models/Question")
 module.exports = {
     index: (req, res) => {

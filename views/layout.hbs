@@ -7,6 +7,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+     {{!-- <link rel="stylesheet" type="text/css" media="screen" href="/styles.css" />
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous"> --}}
+
+    {{!-- <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css"> --}}
+    {{!-- <link rel="stylesheet" href="/css/styles.css"> --}}
+    {{!-- <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css"> --}}
   </head>
   <body>
     <header class="site-header">
@@ -16,11 +23,11 @@
           <ul class="right">
           {{#if currentUser}}
             <li><a href="/question/new">+be aware</a></li>
-            <li><a href="/user/{{currentUser.id}}">Profile</a></li>
-            <li><a href="/user/logout">Log Out</a></li>
+            <li><a href="/user/{{currentUser.id}}">profile</a></li>
+            <li><a href="/user/logout">log out</a></li>
           {{else}}
-            <li><a href="/user/login">Log In</a></li>
-            <li><a href="/user/sign-up">Sign Up</a></li>
+            <li><a href="/user/login">login</a></li>
+            <li><a href="/user/sign-up">join</a></li>
           {{/if}}
           </ul>
         </div>

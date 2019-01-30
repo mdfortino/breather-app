@@ -14,7 +14,7 @@ require('./config/passport')(passport)
 app.use(passport.initialize())
 app.use(passport.session())
 
-
+app.use(express.static("public"));
 app.use(flash());
 app.use(cookieParser());
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -31,7 +31,7 @@ require("./config/passport")(passport);
 app.use(passport.initialize());
 app.use(passport.session());
 
-
+app.set("view engine", "hbs");
 hbs.registerPartials(__dirname + "/views/partials");
 app.use(express.static("public"));
 app.set("view engine", "hbs");
