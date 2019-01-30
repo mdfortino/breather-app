@@ -7,19 +7,20 @@ const createPassword = password =>
 
 User.find({}).remove(() => {
   Intention.find({}).remove(() => {
-    let bugs = User.create({
-        email: "bugsbunny@gmail.com",
-        password: "bugsbunny"
+    let teammate1 = User.create({
+        email: "margo@mvhs.com",
+        password: "lax",
+        username: "margo"
     }).then(user => {
         Promise.all([
           Intention.create({
-            content: "eh, what's up doc?",
+            content: "To stay calm and in control on defensive end.",
             author: user._id
           }).then(intention => {
             user.intentions.push(intention)
           }),
           Intention.create({
-            content: "That's all, folks!",
+            content: "To breathe through obstacles",
             author: user._id
           }).then(intention => {
             user.intentions.push(intention)
@@ -29,46 +30,22 @@ User.find({}).remove(() => {
         })
       })
   
-      let daffy = User.create({
-        email: "daffyduck@gmail.com",
-        password: "daffyduck"
+      let teammate2 = User.create({
+        email: "linds@mvhs.com",
+        password: "lyndslax"
       }).then(user => {
         Promise.all([
           Intention.create({
-            content: "Who's this Duck Dodgers any how?",
+            content: "To box out my defender.",
             author: user._id
           }).then(intention => {
             user.intentions.push(intention)
           }),
           Intention.create({
-            content: "You're dethpicable.",
+            content: "To get every groundball in my space.",
             author: user._id
           }).then(intention => {
             user.intentions.push(intention)
-          })
-        ]).then(() => {
-          user.save(err => console.log(err))
-        })
-      })
-  
-      let elmer = User.create({
-        email: "elmerfudd@gmail.com",
-        password: "elmerfudd"
-      }).then(user => {
-        Promise.all([
-          Intention.create({
-            content:
-              "Shh. Be vewy vewy quiet. I'm hunting wabbits! Huh-huh-huh-huh!",
-            author: user._id
-          }).then(intention => {
-            user.intention.push(intention)
-          }),
-  
-          Intention.create({
-            content: "Kiww da wabbit!",
-            author: user._id
-          }).then(intention => {
-            user.intention.push(intention)
           })
         ]).then(() => {
           user.save(err => console.log(err))

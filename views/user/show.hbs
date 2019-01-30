@@ -1,5 +1,9 @@
 <section class="profile">
-  <h2>{{user.email}}</h2>
+  <p> e-mail address: {{user.email}}</p>
+  <p> username: {{author.username}}</p>
+  <p> motto/mantra: </p>
+
+  {{!-- <h2> e-mail address: {{user.email}}</h2> --}}
   {{#if user.intentions}}
     <div class="intentions">
       {{#each user.intentions}}
@@ -9,4 +13,15 @@
   {{else}}
     <p>No posts yet</p>
   {{/if}}
+{{#if author.username}}
+    <div class="username">
+      {{#each user.username}}
+         {{> 'username'}}
+      {{/each}}
+    </div>
+  {{else}}
+    <p></p>
+  {{/if}}
 </section>
+
+
