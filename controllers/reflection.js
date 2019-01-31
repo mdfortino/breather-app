@@ -1,20 +1,13 @@
-// const {Reflection, Answer} = require("../models/Reflection")
+const Reflection = require("../models/Reflection")
 
-// const User = require("../models/User")
+const User = require("../models/User")
 
-// module.exports = {
-//   show: (req, res) => {
-//     Reflection.findOne({ _id: req.params.id })
-//     .populate("author")
-//     .exec(function(err, reflection) {
-//       Answer.populate(reflection.answers, { path: "author" }, function(
-//         err,
-//         answers
-//       ) {
-//         reflection.answers = answers
-//         res.render("reflection/show", reflection)
-//       })
-//     })
+module.exports = {
+  show: (req, res) => {
+        res.render("reflection/show")
+      }
+    }
+  
 // },
 //     new: (req, res) => {
 //       User.find({}).then(users => {

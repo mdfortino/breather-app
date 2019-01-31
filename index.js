@@ -7,6 +7,10 @@ const bodyParser = require("body-parser");
 const methodOverride = require("method-override");
 const session = require('express-session')
 const passport = require('passport')
+const Timer = require('easytimer.js').Timer;
+// let timerInstance = new Timer();
+
+                  
 // const userController = require("../controllers/user.js");
 
 
