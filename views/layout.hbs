@@ -20,17 +20,20 @@
       <nav>
         <div class="nav-wrapper">
           <a href="/" class="brand-logo left">BREATHER</a>
+          {{!-- <img src = "../img/zen-brush-symbol.png" --}}
           <ul class="right">
           {{#if currentUser}}
-            <li><a href="/intention/new">+intention</a></li>
+          <div class="pagination">
+            <li><a style = "color: white" href="/intention/new">+intention</a></li>
             {{!-- <li><a href = "/reflection/show "> +reflection </a></li> --}}
-            <li><a href="/user/{{currentUser.id}}">profile</a></li>
-            <li><a href="/user/logout">log out</a></li>
+            <li><a style = "color: white" href="/user/{{currentUser.id}}">profile</a></li>
+            <li><a style = "color: white" href="/user/logout">log out</a></li>
           {{else}}
             <li><a href="/user/login">login</a></li>
             <li><a href="/user/sign-up">join</a></li>
           {{/if}}
           </ul>
+        </div>
         </div>
       </nav>
     </header>

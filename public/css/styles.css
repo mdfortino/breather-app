@@ -1,12 +1,66 @@
-.nav-wrapper {
+.wrapper {
     width: 90%;
     max-width: 800px;
     margin: 0 auto;
+    background: gray;
+    }
+    nav{
+      background-image: linear-gradient(to right top, #dce2eb, #dbe4eb, #dbe5eb, #dbe7eb, #dce8ea);
+      height: 90px;
+   
+    }
+   select {
+    display: block;
+   
+   }
+   .brand-logo{
+    background-image: linear-gradient(to right top, #dce2eb, #dbe4eb, #dbe5eb, #dbe7eb, #dce8ea);
+   margin-left: 30px; 
+   margin-right: 10px;  
+   font-family: "Helvetica", monospace; 
+   margin-top: 10px;
+   
+   }
+   .header{
+    background-image: linear-gradient(to right top, #dce2eb, #dbe4eb, #dbe5eb, #dbe7eb, #dce8ea);
+
+   }
+   .card{
+    background-image: linear-gradient(to right top, #dce2eb, #dbe4eb, #dbe5eb, #dbe7eb, #dce8ea);
+    font-family: "Helvetica, san-serif", bold,  monospace;
+   margin-top: 10px;
+   color: gray; 
+
+   }
+  .card-title{
+    font-family: "Helvetica, san-serif", bold,  monospace;
+   margin-top: 10px;
+   color: gray; 
   }
   
-  select {
-    display: block;
-  } 
+.card-content{
+  font-family: "Helvetica", monospace;
+   } 
+h4 {
+  font-family: "Helvetica", monospace;
+}
+p {
+  font-family: "Helvetica", monospace;
+}
+.button{
+  background-color: gray; 
+}
+   li{
+    background-image: linear-gradient(to right top, #dce2eb, #dbe4eb, #dbe5eb, #dbe7eb, #dce8ea);
+    font-family: "Helvetica", monospace;
+    margin-right: 10px;
+    margin-top: 10px;
+    color: white; 
+   }
+   .pagination {
+    border-radius: 5px;
+  }
+
   /* .wrapper {
     width: 90%;
     max-width: 800px;
