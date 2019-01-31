@@ -9,6 +9,7 @@ router.use((req, res, next) => {
 router.use('/', require('./application.js'));
 router.use('/user', require('./user'));
 router.use('/intention', require('./intention'));
+// router.use('/reflection', require('./reflection'))
 
 router.all('*', (req, res) => {
   res.status(400).send();
