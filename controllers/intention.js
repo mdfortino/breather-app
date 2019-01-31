@@ -8,13 +8,29 @@ module.exports = {
     .exec(function(err, intention) {
       Answer.populate(intention.answers, { path: "author" }, function(
         err,
-        answers
+        answers,
+        
       ) {
         intention.answers = answers
         res.render("intention/show", intention)
+
       })
     })
 },
+
+// show: (req,res) => {
+//   Intention.findOne({ _id: req.params.id})
+//   .populate("author")
+//   .exec(function(err, intention){
+//     Like.populate(intention.likes, {path: "author"}, function(
+//       err,
+//       likes,
+//     ) {
+//       intention.likes = likes
+//       res.render("intention/likes", likes)
+//     })
+//   })
+// },
   //   show: (req, res) => {
   //     Intention.findOne({ _id: req.params.id })
   //     .populate("author")

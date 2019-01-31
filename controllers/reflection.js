@@ -4,6 +4,7 @@ const User = require("../models/User")
 
 module.exports = {
   show: (req, res) => {
+      
         res.render("reflection/show")
       }
     }
