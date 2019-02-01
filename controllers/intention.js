@@ -51,23 +51,6 @@ module.exports = {
         });
       });
     },
-    // update: (req, res) => {
-    //   console.log('body', req.body)
-    //   let { content, author } = req.body;
-    //   Intention.findOne({ _id: req.params.id }).then(intention => {
-    //     intention.answers.push({
-    //       content,
-    //       author
-    //     })
-    //     intention.likes.push({
-    //       likes_count,
-    //       author
-    //     });
-    //     intention.save(err => {
-    //       res.redirect(`/intention/${intention._id}`);
-    //     });
-    //   });
-    // },
     delete: (req, res) => {
       Intention.findOneAndRemove({ _id: req.params.id }).then(intention => {
         res.redirect('/')

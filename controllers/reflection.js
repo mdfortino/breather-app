@@ -93,19 +93,19 @@ module.exports = {
           },
         create: (req, res) => {
             console.log('body', req.body)
-           Reflection.create({
-              content: req.body.reflection.content,
-              author: req.body.author
-            }).then(reflection => {
-              console.log('reflection ', reflection)
-              User.findOne({ _id: req.body.author }).then(user => {
-                user.reflections.push(reflection)
-                user.save(result => {
-                  console.log(result)
-                  res.redirect(`/reflection/${reflection._id}`)
-                })
-              })
-            })
+        // //    Reflection.create({
+        // //       content: req.body.reflection.content,
+        // //       author: req.body.author
+        // //     }).then(reflection => {
+        // //       console.log('reflection ', reflection)
+        // //       User.findOne({ _id: req.body.author }).then(user => {
+        // //         user.reflections.push(reflection)
+        // //         user.save(result => {
+        // //           console.log(result)
+        // //           res.redirect(`/reflection/${reflection._id}`)
+        //         })
+        //       })
+            // })
           },
         // create: (req, res) => {
         //   Reflection.create({

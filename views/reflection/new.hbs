@@ -1,16 +1,21 @@
-<h1>breathe</h1>
- 
-<div class="new-item">
-
-  <form action="/reflection/show" method="POST">
-    <p class="input-field">
-      <textarea name='text' rows="4" cols="50" placeholder="take time to pause and reflect..."></textarea>
-    </p>
-    <input type="submit" value="Add It" class="button"/>
+<section class="form-container">
+  <h4 style = "color: gray">breathe</h4>
+  <form action="/reflection" method="post" class="reflection-form">
+    <div class="input-field">
+      <textarea name= "reflection[content]" cols="40" rows="20"   
+      placeholder="take time to pause and reflect."></textarea>
+    </div>
+    <div class="">
+      <select name="author" id="author">
+        <option value="" disabled selected>Choose the User</option>
+        {{#each users}}
+          <option value="{{id}}">{{email}}</option>
+        {{/each}}
+      </select>
+    </div>
+    <div class="input-field">
+      <input type="submit" value="+" class="btn" style = "background-color: gray">
+    </div>
   </form>
+</section>
 
-  <form action="/reflection/show" method="GET">
-    <input type="submit" value="Back" class="button" />
-  </form>
-
-</div>

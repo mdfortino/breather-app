@@ -1,13 +1,13 @@
-<h1>your reflections</h1>
 
-<div class='controls'>
+
+<div class='reflection'>
 
   {{!-- <form action="/user/show" method="GET">
     <input type="submit" value="Back" class="button"/>
   </form> --}}
 
   <form action="/reflection/new" method="GET">
-    <input type="submit" value="New reflection" class="button"/>
+    <input type="submit" value="new reflection" class="button"/>
   </form>
 
 </div>
@@ -17,10 +17,10 @@
     <ul class="items">
       {{#each reflections}}
         <li>
-         {{this.content}}
+        <a class="card-title" href="/reflection/{{id}}"></a>
+         {{content}}
 
-          <a href='edit/{{id}}' method="get" class='update'>Edit</a>
-
+          {{!-- <a href='edit/{{id}}' method="get" class='update'>edit</a> --}}
         </li>
       {{/each}}
     </ul>
