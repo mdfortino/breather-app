@@ -9,8 +9,4 @@ router.post('/sign-up', userController.createSignUp);
 router.get('/logout', userController.logout);
 router.get('/:id', userController.show);
 
-// router.get("/new", userController.new);
-// router.get("/:id", userController.show);
-// router.post("/", userController.create);
-
 module.exports = router;
