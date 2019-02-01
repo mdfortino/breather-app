@@ -1,4 +1,4 @@
-# Project-2 - BREATHER APP
+# Project-2 - Breather App
 ## Description
 Breather is an app for teams to cultivate mindfulness through intention setting and a collection of free resources for practicing meditation. Whether you’re a part of a team of athletes or coworkers, Breather allows you to take the time to breathe and cultivate awareness in order to bring more meaning and purpose to your mission.
 
