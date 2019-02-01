@@ -18,7 +18,30 @@ Breather is an app for teams to cultivate mindfulness through intention setting 
 * Heroku
 
 ##Installation/Getting Started
-You can access the link through heroku or node. 
-##Unsolved Problems
+You can access the link through heroku: https://breatherapp.herokuapp.com/ or via the following installation steps:
+1. To install all necessary dependencies, run :
+```
+$ npm install
+```
+2. then launch the server on port 3333 using: 
+```
+$ nodemon
+```
+3. To access the data launch MongoDB and in a new tab use mongo to fin all users in the database
+```
+$ mongod
+```
+```
+$ mongo
+```
+```
+```
+$ show dbs
+$ use db.BE
+$ db.users.find().pretty()
 
-##Contribution Guidelines 
+## Unsolved Problems
+Future improvements include adding the functionality for the user to be able to add to the collection of meditations and for the data to be saved and rendered in the view. Currently, the data is being saved; however, issues need to be resolved to have it render in the view. I would also like to change the layout of the homepage potentially. 
+## Contribution Guidelines 
+To contribute to the code, identify bugs, and propose improvements, please see the below links: 
+Link to project’s main repository: https://github.com/mdfortino/Project-2 Link to project’s issue tracker: https://github.com/mdfortino/Project-2/issues
