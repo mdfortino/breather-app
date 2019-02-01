@@ -15,3 +15,5 @@ Sign up, login, log out.
 Create a post whenever they need to of 5 4 3 2 1 anxiety release technique
 Create a post whenever they need/want to of gratitude 
 "Like" other users' posts 
+
+*After some user research, switched from concept of anxiety technique to make the app more stress-relieving instead of stress inducing. Hence, the concept creation of BREATHER, an app for teams to create individual and team intentions as well as keep a collection of guided meditations. 
