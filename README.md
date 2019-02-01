@@ -34,7 +34,6 @@ $ mongod
 $ mongo
 ```
 ```
-```
 $ show dbs
 $ use db.BE
 $ db.users.find().pretty()
