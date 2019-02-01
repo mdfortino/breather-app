@@ -1,20 +1,33 @@
 
-{{!-- <!DOCTYPE html>
+ {{!-- <!DOCTYPE html>
 <html>
   <head lang="en">
-  <meta charset="UTF-8"> --}}
+  <meta charset="UTF-8"> 
   <script language="JavaScript">
     function showInput() {
         document.getElementById('display').innerHTML = 
                     document.getElementById("user_input").value;
     }
-  </script>
-  </head>
+  </script> --}}
+  
+<header> 
+  
+{{!-- <div id = "mary">    
+“Instructions for living a life. 
+Pay attention. 
+Be astonished. 
+Tell about it.” - Mary Oliver
+</div> --}}
   <h1> profile </h1>
+
+  </header>
   <p> username/e-mail address : {{user.email}}</p>
+
+
+
 <body>
 
-  <form>
+  {{!-- <form>
     <label><b>What is your personal mantra?</b></label>
     <input type="text" name="message" id="user_input">
   </form>
@@ -24,8 +37,8 @@
     <h1>my mantra</h1>
   </label>
   <p><span id='display'></span></p>
-</body>
-{{!-- </html> --}}
+</body> --}}
+
 
   {{#if user.intentions}}
     <div class="intentions"> 
