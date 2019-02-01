@@ -14,7 +14,7 @@
         <a href="/user/{{ author.id }}" class="">{{ author.email }}</a>
         <span class="intention__date">{{ createdAt }}</span>
         <span class="intention_answers">{{ answers.length }} Answers</span>
-        <span class = "intention_likes"> {{likes.length }} Likes</span>
+        {{!-- <span class = "intention_likes"> {{likes.length }} Likes</span> --}}
       </div>
     </div>
   {{/each}}
@@ -28,8 +28,7 @@
         <label for="content"></label>
         <input type="text" name="content" id="">
       </p>
-      <p class="input-field inline col s2">
-        <input class="btn" type="submit" value="Submit">
+      <input type="submit" value="+" class="btn" style = "background-color: gray">
       </p>
     </form>
   </div>

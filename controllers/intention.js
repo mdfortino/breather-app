@@ -1,4 +1,4 @@
-const {Intention, Answer, Like} = require("../models/Intention")
+const {Intention, Answer} = require("../models/Intention")
 const User = require("../models/User")
 
 module.exports = {

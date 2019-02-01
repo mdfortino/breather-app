@@ -8,9 +8,8 @@
     <a href="/user/{{ author.id }}" class="">{{ author.email }}</a>
     <span class="intention__date">{{ createdAt }}</span>
     <span class="intention_answers">{{ answers.length }} Comments</span>
-    <span class="intention_likes"> {{likes.length}} Likes </span> --}}
-    <form class = "" action="/intention/{{id}}?_method=GET" method = "POST"></form>
-      <button type = "submit" name="button">Like</button>
+    {{!-- <form class = "" action="/intention/{{id}}?_method=GET" method = "POST"></form>
+      <button type = "submit" name="button">Like</button> --}}
     <form class="" action="/intention/{{id}}?_method=DELETE" method="POST">
       <button type="submit" name="button">Delete</button>
     </form>

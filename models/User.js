@@ -18,7 +18,7 @@ const User = new Schema({
       ref: "Intention"
     }
   ],
-  likes_count: Number
+  // likes_count: Number
 });
 
 User.methods.encrypt = function(password) {

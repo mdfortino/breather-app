@@ -18,7 +18,7 @@ Pay attention.
 Be astonished. 
 Tell about it.” - Mary Oliver
 </div> --}}
-  <h1> profile </h1>
+  <h1 style= "color: gray"> profile </h1>
 
   </header>
   <p> username/e-mail address : {{user.email}}</p>
@@ -39,10 +39,9 @@ Tell about it.” - Mary Oliver
   <p><span id='display'></span></p>
 </body> --}}
 
-
+  <h1 style = "color: gray"> my daily intentions </h1> 
   {{#if user.intentions}}
     <div class="intentions"> 
-      <h1> my daily intentions </h1> 
       {{#each user.intentions}}
          {{> 'intention'}}
       {{/each}}
