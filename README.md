@@ -7,7 +7,7 @@ Breather is an app for teams to cultivate mindfulness through intention setting 
  
 
 ## Features
-There are features for setting intention and for saving to a collection of guided meditations. Additionally, login and logout capabilities were built via passport authentication. 
+There are features for setting intentions, commenting on intentions, deleting intentions and for saving to a collection of guided meditations. Additionally, login and logout capabilities were built via passport authentication. 
 ## Technologies Used
 * MongoDB/Mogoose
 * Express
