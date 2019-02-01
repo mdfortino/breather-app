@@ -60,6 +60,16 @@ p {
    .pagination {
     border-radius: 5px;
   }
+  .reflection{
+    padding: 50px; 
+    margin-left: 30px; 
+    margin-right: 10px; 
+    font-family: "Helvetica", monospace;
+  }
+  
+  .button{
+    margin-top: 40px; 
+  }
 
   /* .wrapper {
     width: 90%;
