@@ -27,6 +27,7 @@ const timerInstance = new Schema();
 //     }
   
 //   })
+//reflection will be a list of reflections or meditations 
   const Reflection = new Schema({
     content: String, 
     // createdAt: {
