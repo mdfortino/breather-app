@@ -16,8 +16,8 @@ There are features for setting intention and for saving to a collection of guide
 * CSS
 * Heroku
 
-##Installation/Getting Started
-You can access the link through heroku: https://breatherapp.herokuapp.com/ or via the following installation steps:
+## Installation
+You can access the app through the following heroku link: https://breatherapp.herokuapp.com/ or via the following installation steps:
 1. To install all necessary dependencies, run :
 ```
 $ npm install
