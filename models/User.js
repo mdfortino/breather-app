@@ -6,6 +6,12 @@ const User = new Schema({
   email: String,
   username: String, 
   password: String,
+  reflections: [
+    {
+      type: Schema.Types.ObjectId,
+      ref: "Reflection"
+    }
+  ],
   intentions: [
     {
       type: Schema.Types.ObjectId,

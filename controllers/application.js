@@ -1,5 +1,8 @@
 // a controller is just an object of methods(called actions)
 //the following shows the list of intentions, sorted by date...perhaps sort by number of liks or something else?
+
+
+
 const { Intention } = require("../models/Intention")
 module.exports = {
     index: (req, res) => {
@@ -12,3 +15,4 @@ module.exports = {
       })
     }
   };
+

@@ -1,14 +1,30 @@
+<h1>your reflections</h1>
 
+<div class='controls'>
 
-<h1> meditation timer </h1>
-<a href="https://insighttimer.com/" >"https://insighttimer.com/"</a>
-   <div class='contain-timer'>
-        <h1 id=timer><time>00:00:00</time></h1>
-        <button id="start">start</button>
-        <button id="stop">stop</button>
-        <button id="clear">clear</button>
-    </div>
+  {{!-- <form action="/user/show" method="GET">
+    <input type="submit" value="Back" class="button"/>
+  </form> --}}
 
- {{!-- <script src="/script.js"></script> --}}
+  <form action="/reflection/new" method="GET">
+    <input type="submit" value="New reflection" class="button"/>
+  </form>
 
-{{!-- https://git.generalassemb.ly/mdfortino/js-countdown-timer --}}
+</div>
+
+<section class="profile">
+  {{#if reflections}}
+    <ul class="items">
+      {{#each reflections}}
+        <li>
+         {{this.content}}
+
+          <a href='edit/{{id}}' method="get" class='update'>Edit</a>
+
+        </li>
+      {{/each}}
+    </ul>
+  {{else}}
+    {{!-- <h3>no reflections yet</h3> --}}
+  {{/if}}
+</section>

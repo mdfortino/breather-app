@@ -1,5 +1,6 @@
 const User = require("../models/User");
 const { Intention } = require("../models/Intention");
+const { Reflection } = require("../models/Reflection");
 const bcrypt = require("bcrypt-nodejs");
 
 const createPassword = password =>
