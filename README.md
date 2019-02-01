@@ -7,8 +7,7 @@ Breather is an app for teams to cultivate mindfulness through intention setting 
  
 
 ## Features
-
-
+There are features for setting intention and for saving to a collection of guided meditations. Additionally, login and logout capabilities were built via passport authentication. 
 ## Technologies Used
 * MongoDB/Mogoose
 * Express
@@ -39,7 +38,7 @@ $ mongo
 $ show dbs
 $ use db.BE
 $ db.users.find().pretty()
-
+```
 ## Unsolved Problems
 Future improvements include adding the functionality for the user to be able to add to the collection of meditations and for the data to be saved and rendered in the view. Currently, the data is being saved; however, issues need to be resolved to have it render in the view. I would also like to change the layout of the homepage potentially. 
 ## Contribution Guidelines 
