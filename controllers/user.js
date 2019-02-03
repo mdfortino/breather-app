@@ -1,5 +1,5 @@
 const User = require("../models/User");
-const { Inention } = require("../models/Intention");
+const { Intention } = require("../models/Intention");
 const passport = require("passport");
 
 module.exports = {

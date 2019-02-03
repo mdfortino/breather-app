@@ -1,46 +1,33 @@
+{{!-- <p class="card">
+  {{> 'reflection'}}
+</p> --}}
+<p>hello</p>
+ {{ author}} 
 
+{{#if reflection}}
+    <div class="reflections"> 
+      {{#each user.reflections}}
+     
+      {{/each}}
+    </div>
+  {{else}}
+    <p>no reflections posted yet</p>
+  {{/if}}
 
-<div class='reflection'>
+{{!-- {{#if reflections.length}}
+  {{#each reflections}}
 
-  {{!-- <form action="/user/show" method="GET">
-    <input type="submit" value="Back" class="button"/>
-  </form> --}}
-<li> <a href= "https://insighttimer.com/"> Insight Timer</a>  </li>
-<li> <a href = "https://www.meditationoasis.com/how-to-meditate-1/"> Meditation Oasis</a> </li>
-<li> <a href = "https://www.tarabrach.com/guided-meditations/"> Tara Brach Guided Meditations and Podcast</a> </li>
-<li> <a href = "https://zenhabits.net/more/"> Zen Habits</a> </li>
-<li> <a href = "https://www.doyogawithme.com/yoga-meditation"> Do Yoga With Me</a> </li>
-<li><a href = "https://www.mindful.org/audio-resources-for-mindfulness-meditation">Mindful Meditations </a>  </li>
-<li> <a href = "https://chopra.com/articles/guided-meditations"> Chopra Center Meditations</a> </li>
+          {{ content }}
+    
+      </div>
+    </div>
+  {{/each}}
+{{/if}}
 
+ --}}
 
-
-
-
-
-
-
-
-
-  <form action="/reflection/new" method="GET">
+<p> helloooo </p>
+<form action="/reflection/new" method="GET">
     <input type="submit" style =  "color: white" value="add to your collection of guided meditations" class="button"/>
   </form>
 
-</div>
-
-<section class="profile">
-  {{#if reflections}}
-    <ul class="items">
-      {{#each reflections}}
-        <li>
-        <a class="card-title" href="/reflection/{{id}}"></a>
-         {{content}}
-
-          {{!-- <a href='edit/{{id}}' method="get" class='update'>edit</a> --}}
-        </li>
-      {{/each}}
-    </ul>
-  {{else}}
-    {{!-- <h3>no reflections yet</h3> --}}
-  {{/if}}
-</section>

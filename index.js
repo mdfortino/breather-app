@@ -12,7 +12,6 @@ const passport = require('passport')
 require('./config/passport')(passport)
 app.use(passport.initialize())
 app.use(passport.session())
-
 app.use(express.static("public"));
 app.use(flash());
 app.use(cookieParser());
@@ -23,24 +22,24 @@ app.use(
     saveUninitialized: true,
     resave: false
   })
-);
-
-
-require("./config/passport")(passport);
-app.use(passport.initialize());
-app.use(passport.session());
-
-app.set("view engine", "hbs");
-hbs.registerPartials(__dirname + "/views/partials");
-app.use(express.static("public"));
-app.set("view engine", "hbs");
-app.use(methodOverride("_method"));
-
-
-
-app.use(require("./routes/index.js"));
-
-app.set('port', process.env.PORT || 3333)
+  );
+  
+  
+  require("./config/passport")(passport);
+  app.use(passport.initialize());
+  app.use(passport.session());
+  
+  app.set("view engine", "hbs");
+  hbs.registerPartials(__dirname + "/views/partials");
+  app.use(express.static("public"));
+  app.set("view engine", "hbs");
+  app.use(methodOverride("_method"));
+  
+  
+  
+  app.use(require("./routes/index.js"));
+  
+  app.set('port', process.env.PORT || 3333)
 app.listen(app.get('port'), () => console.log(`server is running on PORT ${app.get('port')}`))
 
 // const express = require("express");

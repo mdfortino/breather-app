@@ -17,3 +17,23 @@
     {{/each}}
   </ul>
 {{/if}}
+
+{{#if reflections}}
+  <ul class="reflections">
+    {{#each reflections}}
+      <div class="card">
+        <div class="card-content">
+          <a class="card-title" href="/reflection/{{id}}">
+            {{ content }}
+          </a>
+        </div>
+        <div class="card-action">
+          <a href="/user/{{ author.id }}" class="">{{ author.email }}</a>
+          <span class="reflection__date">{{ createdAt }}</span>
+          <span class="reflection_answers">{{ answers.length }} Comments</span>
+          {{!-- <span class = "intention_likes">{{likes.length}} Likes </span> --}}
+        </div>
+      </div>
+    {{/each}}
+  </ul>
+{{/if}}
