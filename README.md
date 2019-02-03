@@ -1,14 +1,9 @@
-<<<<<<< HEAD
-# Project-2
-
-![screenshot](img//Users/gamacbook/wdi/projects/Project-2/img/Screen Shot 2019-02-01 at 1.21.43 PM.png)
-=======
 # Project-2 - Breather App
 ## Description
 Breather is an app for teams to cultivate mindfulness through intention setting and a collection of free resources for practicing meditation. Whether you’re a part of a team of athletes or coworkers, Breather allows you to take the time to breathe and cultivate awareness in order to bring more meaning and purpose to your mission.
 
 ## Example
-![ ](img/Screen Shot 2019-02-01 at 1.21.43 PM.png)
+![ ](img/screen-shot.png)
 
 
 
@@ -49,4 +44,3 @@ Future improvements include adding the functionality for the user to be able to 
 ## Contribution Guidelines 
 To contribute to the code, identify bugs, and propose improvements, please see the below links: 
 Link to project’s main repository: https://github.com/mdfortino/Project-2 Link to project’s issue tracker: https://github.com/mdfortino/Project-2/issues
->>>>>>> 1d56e54cc8b51dda7a20b3114da23b9600e8654e
