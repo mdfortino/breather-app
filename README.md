@@ -27,7 +27,7 @@ $ npm install
 ```
 $ nodemon
 ```
-3. To access the data launch MongoDB and in a new tab use mongo to fin all users in the database
+3. To access the data launch MongoDB and in a new tab use mongo to find all users in the database
 ```
 $ mongod
 ```
@@ -40,7 +40,7 @@ $ use db.BE
 $ db.users.find().pretty()
 ```
 ## Unsolved Problems
-Future improvements include adding the functionality for the user to be able to add to the collection of meditations and for the data to be saved and rendered in the view. Currently, the data is being saved; however, issues need to be resolved to have it render in the view. I would also like to change the layout of the homepage potentially. 
+Future improvements include adding the functionality for the user to be able to add to the collection of meditations and for the data to be saved and rendered in the view. Currently, the data is being saved and shown in the database; however, issues need to be resolved to have it render in the view. I would also like to change the layout of the homepage potentially. Additionally, I tested including a meditation timer created with JavaScript for users to have the option to access. I will need to revisit properly implementing the working code in order for the timer to work in this app. 
 ## Contribution Guidelines 
 To contribute to the code, identify bugs, and propose improvements, please see the below links: 
 Link to project’s main repository: https://github.com/mdfortino/Project-2 Link to project’s issue tracker: https://github.com/mdfortino/Project-2/issues
