@@ -3,8 +3,9 @@
 Breather is an app for teams to cultivate mindfulness through intention setting and a collection of free resources for practicing meditation. Whether you’re a part of a team of athletes or coworkers, Breather allows you to take the time to breathe and cultivate awareness in order to bring more meaning and purpose to your mission.
 
 ## Example
-![screenshot](img//Users/gamacbook/wdi/projects/Project-2/img/Screen Shot 2019-02-01 at 1.21.43 PM.png)
- 
+![](img/Screen Shot 2019-02-01 at 1.21.43 PM.png)
+
+
 
 ## Features
 There are features for setting intentions, commenting on intentions, deleting intentions and for accessing a collection of guided meditations. Additionally, login and logout capabilities were built via passport authentication. 
