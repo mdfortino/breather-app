@@ -19,11 +19,12 @@ module.exports = {
           })
       },
          index: (req, res) => {
-             User.find({})
-             .then(reflection => {
+             //find all reflections
+             Reflection.find({})
+             .then(reflections => {
                 // console.log('body', reflection)
 
-            res.render('reflection/show', { reflections : reflection } )
+            res.render('reflection/show', { reflections } )
             // console.log("Reflections clicked")
           })
         },

@@ -2,12 +2,11 @@
   {{> 'reflection'}}
 </p> --}}
 <p>hello</p>
- {{ author}} 
 
-{{#if reflection}}
+{{#if reflections}}
     <div class="reflections"> 
-      {{#each user.reflections}}
-     
+      {{#each reflections}}
+     <p> {{content}} </p>
       {{/each}}
     </div>
   {{else}}
