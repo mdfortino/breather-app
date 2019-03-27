@@ -1,8 +1,3 @@
-{{!-- <p class="card">
-  {{> 'reflection'}}
-</p> --}}
-<p>hello</p>
-
 {{#if reflections}}
     <div class="reflections"> 
       {{#each reflections}}
@@ -10,22 +5,10 @@
       {{/each}}
     </div>
   {{else}}
-    <p>no reflections posted yet</p>
+    <p>no meditations posted yet</p>
   {{/if}}
 
-{{!-- {{#if reflections.length}}
-  {{#each reflections}}
 
-          {{ content }}
-    
-      </div>
-    </div>
-  {{/each}}
-{{/if}}
-
- --}}
-
-<p> helloooo </p>
 <form action="/reflection/new" method="GET">
     <input type="submit" style =  "color: white" value="add to your collection of guided meditations" class="button"/>
   </form>
